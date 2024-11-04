@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.main,
+.create,
+.delete-main,
+.update-main{
+    background-color: rgb(54, 52, 52);
+}
+
+.input{
+    width: 20rem;
+    outline: none;
+    border: solid 2px black;
+}
+
+.add-btn{
+    border: solid 2px black;
+    border-radius: .375rem;
+    padding: .25rem; 
+    font-size: 1.125rem;
+    color: black;
+}
+
+.disabled-add-btn{
+    border: solid 2px black;
+    border-radius: .375rem;
+    padding: .25rem; 
+    font-size: 1.125rem;
+    color: rgba(0, 0, 0, 0.351)
+}
+
+.input::placeholder{
+    color: rgba(0, 0, 0, 0.357)
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
